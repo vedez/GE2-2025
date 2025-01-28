@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0kgqk6qqdrk0"]
+
+[ext_resource type="Script" uid="uid://qb5irhoj5rg1" path="res://boid.gd" id="1_pq8q7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_pyidc"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_vvh5c"]
+
+[node name="root" type="Node3D"]
+
+[node name="boid" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0)
+script = ExtResource("1_pq8q7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="boid"]
+mesh = SubResource("BoxMesh_pyidc")
+
+[node name="Marker3D" type="Marker3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Marker3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6.66155)
+mesh = SubResource("SphereMesh_vvh5c")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.987688, -0.156434, 0, -6.83797e-09, -4.31732e-08, -1, 0.156434, 0.987688, -4.37114e-08, 0, 0, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.53099, -3.78046)

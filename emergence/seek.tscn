@@ -22,7 +22,7 @@ glow_enabled = true
 [sub_resource type="BoxMesh" id="BoxMesh_q6o6m"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tgpyc"]
-albedo_color = Color(0, 0.0705882, 1, 1)
+albedo_color = Color(0, 0.0705882, 1, 0.207843)
 
 [sub_resource type="SphereMesh" id="SphereMesh_g7hsx"]
 
@@ -30,7 +30,8 @@ albedo_color = Color(0, 0.0705882, 1, 1)
 size = Vector2(100, 100)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p2fuv"]
-albedo_color = Color(0.0666667, 0.917647, 0.662745, 1)
+transparency = 1
+albedo_color = Color(0.0666667, 0.917647, 0.662745, 0.2)
 
 [sub_resource type="Curve3D" id="Curve3D_tgpyc"]
 _data = {
@@ -51,7 +52,9 @@ target = NodePath("../Marker3D")
 arrive_enabled = false
 arrive_target = NodePath("../Marker3D")
 slowing_distance = 10
+banking = 0.1
 path = NodePath("../Path3D")
+path_follow_enabled = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="boid"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0)

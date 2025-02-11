@@ -43,6 +43,7 @@
 
 ## Lab
 - Create a behavior called PlayerSteering that takes input from a controller and generates a force
+- Create a formation generator that creates a V formation where the leader is at the top and the followers are spaced out evenly in a V shape behind the leader
 
 ## Week 2
 - Seek, Arrive, Path Follow

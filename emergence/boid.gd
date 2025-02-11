@@ -22,7 +22,7 @@ extends CharacterBody3D
 @export var pursue_enabled = true
 @export var pursue_target:CharacterBody3D
 
-@export var offset_pursue_enabled = true
+@export var offset_pursue_enabled = false
 @export var leader:CharacterBody3D
 var offset:Vector3
 
@@ -47,7 +47,7 @@ func pursue(pursue_target):
 	var time = dist / max_speed	
 	var projected = pursue_target.global_position + (pursue_target.velocity * time)
 
-	DebugDraw3D.draw_arrow(pursue_target.global_position, projected)
+	DebugDraw3D.draw_arrow(pursue_target.global_position, projected, Color.DARK_GRAY, 0.1)
 		
 	return seek(projected)
 	

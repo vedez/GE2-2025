@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cks4uwsgfyggy" path="res://boid.gd" id="1_kuxis"]
 [ext_resource type="Script" uid="uid://df0wbq4s31n0w" path="res://timer.gd" id="2_3ipyk"]
 [ext_resource type="Script" uid="uid://ceama6se3ec5g" path="res://FPController.gd" id="3_jxdum"]
-[ext_resource type="Script" path="res://PathDrawer.gd" id="4_nyk8q"]
+[ext_resource type="Script" uid="uid://cnxoai82orhd0" path="res://PathDrawer.gd" id="4_nyk8q"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tgpyc"]
 sky_top_color = Color(0.929874, 0.947462, 0.990667, 1)
@@ -135,7 +135,6 @@ slowing_distance = 10
 banking = 0.1
 player_steering_enabled = false
 pursue_enabled = false
-offset_pursue_enabled = false
 path = NodePath("../Path3D")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="leader"]

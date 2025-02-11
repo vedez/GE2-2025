@@ -55,3 +55,13 @@ move_down={
 "events": [Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":3,"axis_value":1.0,"script":null)
 ]
 }
+
+[rendering]
+
+anti_aliasing/quality/msaa_2d=2
+anti_aliasing/quality/msaa_3d=2
+
+[xr]
+
+openxr/enabled=true
+openxr/startup_alert=false

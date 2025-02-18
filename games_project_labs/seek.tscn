@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2iyl4n8dtghv"]
+
+[ext_resource type="Script" path="res://boid.gd" id="1_fffh6"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_q6wg2"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_snp4l"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Target" type="Marker3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Target"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.30078, 0, 7.70928)
+mesh = SubResource("SphereMesh_q6wg2")
+
+[node name="boid" type="CharacterBody3D" parent="."]
+script = ExtResource("1_fffh6")
+target_node_path = NodePath("../Target")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="boid"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("PrismMesh_snp4l")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 16.9176, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20.1076, 0)

@@ -35,6 +35,17 @@
 - https://github.com/skooter500/GE2-LabTest2-2017
 - https://github.com/skooter500/GAILabTest12017
 
+## Week 4 - Refactoring
+
+## Lab
+- Create a formation generator that creates a V formation of boids with the leader implementing path follow and the followers implementing offset pursue:
+
+[![Video](http://img.youtube.com/vi/bydalDzhCBY/0.jpg)](http://www.youtube.com/watch?bydalDzhCBY)
+
+- The Formation Generator should expose leader and followers as fields
+
+- Modify the formation generator to use Tweens wheen spawning in the agents
+- Modify the formation generator to generate boids in a semi circle
 
 ## Week 3 
 - Player Steering

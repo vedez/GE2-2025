@@ -43,7 +43,7 @@
 ## Lab
 - Create a formation generator that creates a V formation of boids with the leader implementing path follow and the followers implementing offset pursue:
 
-[![Video](http://img.youtube.com/vi/bydalDzhCBY/0.jpg)](http://www.youtube.com/watch?bydalDzhCBY)
+[![Video](http://img.youtube.com/vi/bydalDzhCBY/0.jpg)](http://www.youtube.com/watch?v=bydalDzhCBY)
 
 - The Formation Generator should expose leader and followers as fields
 

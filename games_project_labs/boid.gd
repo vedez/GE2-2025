@@ -9,12 +9,10 @@ var force:Vector3
 
 @export var target_node_path:NodePath
 
-#var t = $"../Target"
 var target_pos
 
 func _ready():
 	var t = get_node(target_node_path)
-	#var t = $"../Target"
 	target_pos = t.position
 	
 func seek(target):

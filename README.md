@@ -38,7 +38,7 @@
 ## Week 4 - Refactoring
 - [SOLID Principles](https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
 - [Procedural Animation](https://www.roadtovr.com/the-need-for-procedural-animation-in-virtual-reality-ocean-rift-developer/)
-- [Archaic Revival](docs/Full%20text%20of%20_The%20Archaic%20Revival_.html) 
+- [Archaic Revival](https://archive.org/stream/pdfy-CVSFsGW3fYSFP1wM/McKenna%2C%20Terence%20-%20The%20Archaic%20Revival_djvu.txt) 
 
 ## Lab
 - Create a formation generator that creates a V formation of boids with the leader implementing path follow and the followers implementing offset pursue:

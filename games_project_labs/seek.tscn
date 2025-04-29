@@ -9,14 +9,15 @@
 [node name="Node3D" type="Node3D"]
 
 [node name="Target" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.27214, 0, 5.04582)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Target"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.30078, 0, 7.70928)
 mesh = SubResource("SphereMesh_q6wg2")
 
-[node name="boid" type="CharacterBody3D" parent="."]
+[node name="boid" type="CharacterBody3D" parent="." node_paths=PackedStringArray("target_node")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21945, 0, -0.0338564)
 script = ExtResource("1_fffh6")
-target_node_path = NodePath("../Target")
+target_node = NodePath("../Target")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="boid"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)

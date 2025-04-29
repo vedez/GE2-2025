@@ -7,13 +7,12 @@ var force:Vector3
 @export var max_speed:float=10
 @export var mass:float=1
 
-@export var target_node_path:NodePath
+@export var target_node:Node3D
 
 var target_pos
 
 func _ready():
-	var t = get_node(target_node_path)
-	target_pos = t.position
+	target_pos = target_node.position
 	
 func seek(target):
 	var to_target:Vector3 = target - position
